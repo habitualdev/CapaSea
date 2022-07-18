@@ -1,6 +1,6 @@
 FROM ubuntu:21.04
 
-LABEL maintaner = "https://github.com/roaldi"
+LABEL maintaner = "https://github.com/habitualdev"
 
 RUN apt-get update \
     && apt-get upgrade -y \
@@ -9,7 +9,7 @@ RUN apt-get update \
 
 WORKDIR /home/capa
 
-RUN wget "https://github.com/roaldi/CapaSea/releases/download/v0.5.0/CapaSea"
+RUN wget "https://github.com/habitualdev/CapaSea/releases/download/v0.5.0/CapaSea"
 
 COPY ./init.sh /home/capa/init.sh
 
